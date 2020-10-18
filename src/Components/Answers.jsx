@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Answers.css';
-import Answer from './Answer.jsx';
+import Answer from "./Answer.jsx";
 
 export default class Card extends Component {
 
@@ -8,13 +8,15 @@ export default class Card extends Component {
     render(){
         const  answerArray = ['A', 'B', 'C', 'D'];
         return (
-            <div>
-                {
-                answerArray.forEach(answer => {
-                    {answer} <Answer />
-                })
-                }
+             <div>
+        {answerArray.map((element) => {
+          return (
+            <div className="answerFormat">
+              <h3> {element} - </h3> <Answer />
             </div>
+          );
+        })}
+      </div>
         )
     }
 }

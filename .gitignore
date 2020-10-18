@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+/.pnp
+.pnp.js
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
